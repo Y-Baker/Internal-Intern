@@ -48,3 +48,21 @@ form.addEventListener('submit', (e) => {
     form.style.backgroundColor = 'lightcoral';
   }
 });
+
+const submitMessage = (title, email, message) => {
+  const data = { "Title": title, "Email": email, "Message": message };
+
+  fetch('/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ title, email, message })
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      alert(data.message);
+      form.reset();
+    })
+    .catch((err) => console.log(err));
+}
