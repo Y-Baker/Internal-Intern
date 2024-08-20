@@ -1,5 +1,14 @@
-# Web-Static
+# Node js
 
+## How to run local
+* install node modules
+```bash
+npm i
+```
+* run 
+```bash
+npm run dev
+```
 
 <br />
 

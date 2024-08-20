@@ -32,10 +32,7 @@ nav ul li a {
 
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
-
     text-align: center;
 }
 
@@ -47,19 +44,17 @@ h1 {
 
 .table-header {
     display: contents;
-
     color: white;
     font-size: 18px;
-
 }
 
 .table-container {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    margin-right: -320px;
-    margin-left: -320px;
     gap: 5px;
     margin-top: 32px;
+    margin-left: 64px;
+    margin-right: 64px;
 }
 
 
@@ -97,19 +92,14 @@ footer {
 #email {
 
     background-color: #f445b1;
-    height: 20px;
+    height: 25px;
     text-align: center;
     padding-top: 7px;
     padding-bottom: 7px;
-
+    font-size: 22px;
 }
 
-#t1,
-#m1,
-#e1,
-#t2,
-#m2,
-#e2 {
+.table-element {
 
     background-color: white;
 }

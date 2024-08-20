@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Messages</title>
+    <link rel="stylesheet" href="css/viewPage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="submit">Submit a Message</a></li>
+                <li><a href="view">View Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>View Messages</h1>
+        <div class="table-container">
+            <div class="table-header">
+                <div id = "title" class="table-title">Title</div>
+                <div id = "email" class="table-email">Sent To</div>
+                <div id = "message" class="table-message">Message</div>
+            </div>
+            <% data.map((message, index) => { %>
+                <div class="table-row">
+                    <div class="table-element table-title"><%= message.title %></div>
+                    <div class="table-element table-email"><%= message.email %></div>
+                    <div class="table-element table-message"><%= message.body %></div>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Messaging Website
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
